@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GuardRide Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">GuardRide Survey Form</h1>
+                <p id="description" class="description text-center">Have your say about our service, we are grateful for your opinions!</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name." required/>
+                </div>
+                <div class="form-group">
+                    <label id="mail-label" for="mail">Mail</label>
+                    <input type="text" name="mail" id="mail" class="form-control" placeholder="Enter your email." required/>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+                </div>
+                <div class="form-group">
+                    <p>Please kindly specify your current role ?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select your role</option>
+                        <option value="student">I'm a student.</option>
+                        <option value="job">I have a full-time job.</option>
+                        <option value="apprentice">I'm a full-time apprentice.</option>
+                        <option value="preferNo">I would prefer not to say.</option>
+                        <option value="other">My profession is not in this list.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What are you using your GuardRide with ?</p>
+                    <select id="usage" name="use" class="form-control" required>
+                        <option disabled selected value>Select your answer.</option>
+                        <option value="Motos">It's on my motorcycles.</option>
+                        <option value="Cars">It's in my cars.</option>
+                        <option value="Both">It's on all of my vehicles.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Do you enjoy using GuardRide ?</p>
+                    <label>
+                        <input type="radio" name="satisfaction" value="yes" class="input-radio"/>Yes.
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="no" class="input-radio"/>No.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend GuardRide to one of your friends ?</p>
+                    <label>
+                        <input type="radio" name="user-recommend" value="yes" class="input-radio"/> Absolutely.
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recommend" value="not-sure" class="input-radio"/> I think I need more time.
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recommend" value="no" class="input-radio"/> No, I won't.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite from GuardRide ?</p>
+                    <select id="most-like" name="mostlike" class="form-control" required>
+                        <option disabled selected value>Select your answer.</option>
+                        <option value="UX/UI">User Interface/Experience.</option>
+                        <option value="integration">Intergrations with devices/facilities.</option>
+                        <option value="availability">Availability.</option>
+                        <option value="affordable">Affordability.</option>
+                        <option value="reliability">Reliability.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What would you like us to improve at GuardRide?<span class="clue"> (Check all that apply.)</span></p>
+                    <label>
+                        <input type="checkbox" name="prefer" value="performance" class="input-checkbox"/> Performance of service.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="relationship" class="input-checkbox"/> Relationship with facilities.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="customer" class="input-checkbox"/> Customer service.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="availability" class="input-checkbox"/> Additional availability.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="feature" class="input-checkbox"/> Additional features.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Are there anything else you would want to add ?</p>
+                    <textarea id="comments" name="comment" class="input-textarea" placeholder="Anything positive, negative will all be very much appreciated..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit.</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
