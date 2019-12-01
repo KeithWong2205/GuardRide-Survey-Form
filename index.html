@@ -25,7 +25,7 @@
                     <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
                 </div>
                 <div class="form-group">
-                    <p>Please kindly specify your current role ?</p>
+                    <p id="role">Please kindly specify your current role ?</p>
                     <select id="dropdown" name="role" class="form-control" required>
                         <option disabled selected value>Select your role</option>
                         <option value="student">I'm a student.</option>
@@ -36,7 +36,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <p>What are you using your GuardRide with ?</p>
+                    <p id="usage">What are you using your GuardRide with ?</p>
                     <select id="usage" name="use" class="form-control" required>
                         <option disabled selected value>Select your answer.</option>
                         <option value="Motos">It's on my motorcycles.</option>
@@ -45,16 +45,16 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <p>Do you enjoy using GuardRide ?</p>
+                    <p id="satisfaction">Do you enjoy using GuardRide ?</p>
                     <label>
-                        <input type="radio" name="satisfaction" value="yes" class="input-radio"/>Yes.
+                        <input type="radio" name="satisfaction" value="yes" class="input-radio"/> Yes.
                     </label>
                     <label>
-                        <input type="radio" name="satisfaction" value="no" class="input-radio"/>No.
+                        <input type="radio" name="satisfaction" value="no" class="input-radio"/> No.
                     </label>
                 </div>
                 <div class="form-group">
-                    <p>Would you recommend GuardRide to one of your friends ?</p>
+                    <p id="recommend">Would you recommend GuardRide to one of your friends ?</p>
                     <label>
                         <input type="radio" name="user-recommend" value="yes" class="input-radio"/> Absolutely.
                     </label>
@@ -66,7 +66,7 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <p>What is your favorite from GuardRide ?</p>
+                    <p id="favorite">What is your favorite from GuardRide ?</p>
                     <select id="most-like" name="mostlike" class="form-control" required>
                         <option disabled selected value>Select your answer.</option>
                         <option value="UX/UI">User Interface/Experience.</option>
@@ -77,7 +77,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <p>What would you like us to improve at GuardRide?<span class="clue"> (Check all that apply.)</span></p>
+                    <p id="improve">What would you like us to improve at GuardRide?<span class="clue"> (Check all that apply.)</span></p>
                     <label>
                         <input type="checkbox" name="prefer" value="performance" class="input-checkbox"/> Performance of service.
                     </label>
@@ -95,7 +95,7 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <p>Are there anything else you would want to add ?</p>
+                    <p id="comment">Are there anything else you would want to add ?</p>
                     <textarea id="comments" name="comment" class="input-textarea" placeholder="Anything positive, negative will all be very much appreciated..."></textarea>
                 </div>
                 <div class="form-group">
